@@ -19,8 +19,7 @@
 	},
 	"commands": {
 		"run":"Spades.Ace",
-        "watch":"Watchbird --dnx Spades.Ace",
-        "dir":"Watchbird --cmd ls"
+        "watch":"Watchbird --dnx Spades.Ace"
 	},
 	 "frameworks": {
         "dnx451": {

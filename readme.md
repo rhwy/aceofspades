@@ -6,6 +6,18 @@ integrates smoothly with your tools, habits and available from the command line?
 It's about Experience driven design, providing inputs and see live outputs of the function
 you are actually working on, one at a time. 
 
+
+## How To Run it?
+
+Clone the repo and within the sources folder `src/Spades.Ace` run:
+
+    dnu restore
+    dnx watch
+    
+open in your editor the [src/Spades.Ace/Sample.cs](Sample.cs) file and start playing with the experiments!
+
+
+
 ## Todo for going from POC to PROD
 
 * split runner and core. 
