@@ -1,0 +1,29 @@
+{
+	"version": "1.0.0-rc1-final",
+	"name":"spades",
+    "description":"live executing your experiments",
+    "projectUrl":"https://github.com/rhwy/aceofspades",
+    "tags":["watch", "test", "experiments","continuous", "dnx", "mono"],
+	"authors": [
+		"rui carvalho"
+	],
+	"compilationOptions": {
+        "warningsAsErrors": true
+    },
+	"dependencies": {
+		"Watchbird": "1.0.0-*",
+		"Microsoft.Dnx.Runtime.Abstractions": "1.0.0-*",
+        "Microsoft.Framework.Configuration":"1.0.0-*",
+		"Microsoft.Framework.Configuration.Json": "1.0.0-*",
+		"Microsoft.Framework.Configuration.CommandLine": "1.0.0-*"
+	},
+	"commands": {
+		"run":"Spades.Ace",
+        "watch":"Watchbird --dnx Spades.Ace",
+        "dir":"Watchbird --cmd ls"
+	},
+	 "frameworks": {
+        "dnx451": {
+        }
+    }
+}
