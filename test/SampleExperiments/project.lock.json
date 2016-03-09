@@ -1,0 +1,303 @@
+{
+  "locked": false,
+  "version": 2,
+  "targets": {
+    "DNX,Version=v4.5.1": {
+      "FSWatcher/0.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/FSWatcher.dll": {}
+        },
+        "runtime": {
+          "lib/FSWatcher.dll": {}
+        }
+      },
+      "Microsoft.Extensions.PlatformAbstractions/1.0.0-rc2-20019": {
+        "type": "package",
+        "compile": {
+          "lib/net451/Microsoft.Extensions.PlatformAbstractions.dll": {}
+        },
+        "runtime": {
+          "lib/net451/Microsoft.Extensions.PlatformAbstractions.dll": {}
+        }
+      },
+      "Microsoft.Framework.Configuration/1.0.0-rc1-15678": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Framework.Configuration.Abstractions": "1.0.0-rc1-15678"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Framework.Configuration.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Framework.Configuration.dll": {}
+        }
+      },
+      "Microsoft.Framework.Configuration.Abstractions/1.0.0-rc1-15678": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Framework.Configuration.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Framework.Configuration.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Framework.Configuration.CommandLine/1.0.0-rc1-15678": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Framework.Configuration": "1.0.0-rc1-15678"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Framework.Configuration.CommandLine.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Framework.Configuration.CommandLine.dll": {}
+        }
+      },
+      "Microsoft.Framework.Configuration.FileExtensions/1.0.0-rc1-15678": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Framework.Configuration": "1.0.0-rc1-15678"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Framework.Configuration.FileExtensions.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Framework.Configuration.FileExtensions.dll": {}
+        }
+      },
+      "Microsoft.Framework.Configuration.Json/1.0.0-rc1-15678": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Framework.Configuration": "1.0.0-rc1-15678",
+          "Microsoft.Framework.Configuration.FileExtensions": "1.0.0-rc1-15678",
+          "Newtonsoft.Json": "6.0.6"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/Microsoft.Framework.Configuration.Json.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Microsoft.Framework.Configuration.Json.dll": {}
+        }
+      },
+      "Newtonsoft.Json/6.0.6": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "watchbird/1.0.0-rc1-3": {
+        "type": "package",
+        "dependencies": {
+          "FSWatcher": "0.1.0",
+          "Microsoft.Extensions.PlatformAbstractions": "1.0.0-rc2-20019",
+          "Microsoft.Framework.Configuration": "1.0.0-rc1-15678",
+          "Microsoft.Framework.Configuration.CommandLine": "1.0.0-rc1-15678",
+          "Microsoft.Framework.Configuration.Json": "1.0.0-rc1-15678"
+        },
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core"
+        ],
+        "compile": {
+          "lib/dnx451/Watchbird.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Watchbird.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FSWatcher/0.1.0": {
+      "type": "package",
+      "sha512": "waF2Y/EcSAaRi4d7VJCamHAaJPm0ydz98ZwVJKuQHsrtSJzsi92v75FujtqYG1VZ2SDs/KRCWzHvXEUI1O8ZPQ==",
+      "files": [
+        "FSWatcher.0.1.0.nupkg",
+        "FSWatcher.0.1.0.nupkg.sha512",
+        "FSWatcher.nuspec",
+        "lib/FSWatcher.dll"
+      ]
+    },
+    "Microsoft.Extensions.PlatformAbstractions/1.0.0-rc2-20019": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "l/gqfBRPHCJved7EYJfSLqxULWhoo1HecyZV3bcIxzkQIITR9L+X85TAevfQQrbDkz+Pzgn9pKeWa+DK9E3UFQ==",
+      "files": [
+        "lib/dotnet5.4/Microsoft.Extensions.PlatformAbstractions.dll",
+        "lib/dotnet5.4/Microsoft.Extensions.PlatformAbstractions.xml",
+        "lib/net451/Microsoft.Extensions.PlatformAbstractions.dll",
+        "lib/net451/Microsoft.Extensions.PlatformAbstractions.xml",
+        "Microsoft.Extensions.PlatformAbstractions.1.0.0-rc2-20019.nupkg",
+        "Microsoft.Extensions.PlatformAbstractions.1.0.0-rc2-20019.nupkg.sha512",
+        "Microsoft.Extensions.PlatformAbstractions.nuspec"
+      ]
+    },
+    "Microsoft.Framework.Configuration/1.0.0-rc1-15678": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "6yWDGkxv5MVawYPL3ChYtrGOZTGRnmp8/6VajLYYFH3woMNFnj3NEuGGPHGHsFHtSdw8FIYTKY8VGDpVt6iOzA==",
+      "files": [
+        "lib/dnx451/Microsoft.Framework.Configuration.dll",
+        "lib/dnx451/Microsoft.Framework.Configuration.xml",
+        "lib/dnxcore50/Microsoft.Framework.Configuration.dll",
+        "lib/dnxcore50/Microsoft.Framework.Configuration.xml",
+        "lib/dotnet/Microsoft.Framework.Configuration.dll",
+        "lib/dotnet/Microsoft.Framework.Configuration.xml",
+        "lib/net45/Microsoft.Framework.Configuration.dll",
+        "lib/net45/Microsoft.Framework.Configuration.xml",
+        "Microsoft.Framework.Configuration.1.0.0-rc1-15678.nupkg",
+        "Microsoft.Framework.Configuration.1.0.0-rc1-15678.nupkg.sha512",
+        "Microsoft.Framework.Configuration.nuspec"
+      ]
+    },
+    "Microsoft.Framework.Configuration.Abstractions/1.0.0-rc1-15678": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "KNuO0pFXpUWnjE7Kq3otGwjgPvVbDHYRXofU7O4GtTXAOir9Zd3o60hs3jUYVWEc1Nzg0OIDmDXT0IuKRvpKcw==",
+      "files": [
+        "lib/dnx451/Microsoft.Framework.Configuration.Abstractions.dll",
+        "lib/dnx451/Microsoft.Framework.Configuration.Abstractions.xml",
+        "lib/dnxcore50/Microsoft.Framework.Configuration.Abstractions.dll",
+        "lib/dnxcore50/Microsoft.Framework.Configuration.Abstractions.xml",
+        "lib/dotnet/Microsoft.Framework.Configuration.Abstractions.dll",
+        "lib/dotnet/Microsoft.Framework.Configuration.Abstractions.xml",
+        "lib/net45/Microsoft.Framework.Configuration.Abstractions.dll",
+        "lib/net45/Microsoft.Framework.Configuration.Abstractions.xml",
+        "Microsoft.Framework.Configuration.Abstractions.1.0.0-rc1-15678.nupkg",
+        "Microsoft.Framework.Configuration.Abstractions.1.0.0-rc1-15678.nupkg.sha512",
+        "Microsoft.Framework.Configuration.Abstractions.nuspec"
+      ]
+    },
+    "Microsoft.Framework.Configuration.CommandLine/1.0.0-rc1-15678": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "AsuCO55wPi23G037Xuxl27eYQ6D259UZoVdGpGZpd0RDc+z0+YTyPa2F1wXKcZ4l+Evk+7gbzgy9sytvSr7LAQ==",
+      "files": [
+        "lib/dnx451/Microsoft.Framework.Configuration.CommandLine.dll",
+        "lib/dnx451/Microsoft.Framework.Configuration.CommandLine.xml",
+        "lib/dnxcore50/Microsoft.Framework.Configuration.CommandLine.dll",
+        "lib/dnxcore50/Microsoft.Framework.Configuration.CommandLine.xml",
+        "lib/dotnet/Microsoft.Framework.Configuration.CommandLine.dll",
+        "lib/dotnet/Microsoft.Framework.Configuration.CommandLine.xml",
+        "lib/net45/Microsoft.Framework.Configuration.CommandLine.dll",
+        "lib/net45/Microsoft.Framework.Configuration.CommandLine.xml",
+        "Microsoft.Framework.Configuration.CommandLine.1.0.0-rc1-15678.nupkg",
+        "Microsoft.Framework.Configuration.CommandLine.1.0.0-rc1-15678.nupkg.sha512",
+        "Microsoft.Framework.Configuration.CommandLine.nuspec"
+      ]
+    },
+    "Microsoft.Framework.Configuration.FileExtensions/1.0.0-rc1-15678": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "RbmehCO9nXZVr/Zv0qaPOQbgfiSJfEF5oagX8qAu+qgqwCG2wT+ycFCoh4cNCbUL2DtHEFqCH2puyN1LyP0lOg==",
+      "files": [
+        "lib/dnx451/Microsoft.Framework.Configuration.FileExtensions.dll",
+        "lib/dnx451/Microsoft.Framework.Configuration.FileExtensions.xml",
+        "lib/dotnet/Microsoft.Framework.Configuration.FileExtensions.dll",
+        "lib/dotnet/Microsoft.Framework.Configuration.FileExtensions.xml",
+        "lib/net45/Microsoft.Framework.Configuration.FileExtensions.dll",
+        "lib/net45/Microsoft.Framework.Configuration.FileExtensions.xml",
+        "Microsoft.Framework.Configuration.FileExtensions.1.0.0-rc1-15678.nupkg",
+        "Microsoft.Framework.Configuration.FileExtensions.1.0.0-rc1-15678.nupkg.sha512",
+        "Microsoft.Framework.Configuration.FileExtensions.nuspec"
+      ]
+    },
+    "Microsoft.Framework.Configuration.Json/1.0.0-rc1-15678": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "EtqEtTlw32knlOcIyPeWPQaWACoiop7gvIgrblVpKCpICFnncZ296aRsldEwnRMa6HxkeqXE8rjyPnSQlUbxWQ==",
+      "files": [
+        "lib/dnx451/Microsoft.Framework.Configuration.Json.dll",
+        "lib/dnx451/Microsoft.Framework.Configuration.Json.xml",
+        "lib/dnxcore50/Microsoft.Framework.Configuration.Json.dll",
+        "lib/dnxcore50/Microsoft.Framework.Configuration.Json.xml",
+        "lib/dotnet/Microsoft.Framework.Configuration.Json.dll",
+        "lib/dotnet/Microsoft.Framework.Configuration.Json.xml",
+        "lib/net45/Microsoft.Framework.Configuration.Json.dll",
+        "lib/net45/Microsoft.Framework.Configuration.Json.xml",
+        "Microsoft.Framework.Configuration.Json.1.0.0-rc1-15678.nupkg",
+        "Microsoft.Framework.Configuration.Json.1.0.0-rc1-15678.nupkg.sha512",
+        "Microsoft.Framework.Configuration.Json.nuspec"
+      ]
+    },
+    "Newtonsoft.Json/6.0.6": {
+      "type": "package",
+      "sha512": "w26uZNyCG5VeoKiEOJ4+9/o8koSofLKwHl7WLreIcp0U6r57L7WiRXmjp8MTKFw6dYNZ9AE0lw69WYbIhUsU9Q==",
+      "files": [
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netcore45/Newtonsoft.Json.dll",
+        "lib/netcore45/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+wp80+win8+wpa81+aspnetcore50/Newtonsoft.Json.dll",
+        "lib/portable-net45+wp80+win8+wpa81+aspnetcore50/Newtonsoft.Json.xml",
+        "Newtonsoft.Json.6.0.6.nupkg",
+        "Newtonsoft.Json.6.0.6.nupkg.sha512",
+        "Newtonsoft.Json.nuspec",
+        "tools/install.ps1"
+      ]
+    },
+    "watchbird/1.0.0-rc1-3": {
+      "type": "package",
+      "sha512": "rO/uRsAMn0tgmkuz+G5uqW3YtFeCmdGQFgViTTt0M3Cyf1NuUjKNJcheGwB7JzKLWAhHSlUpa7knmyYVkwl86g==",
+      "files": [
+        "app/project.json",
+        "app/watchbird",
+        "app/watchbird.cmd",
+        "lib/dnx451/Watchbird.dll",
+        "lib/dnx451/Watchbird.xml",
+        "Watchbird.1.0.0-rc1-3.nupkg",
+        "Watchbird.1.0.0-rc1-3.nupkg.sha512",
+        "Watchbird.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "": [
+      "watchbird >= 1.0.0-rc1-3"
+    ]
+  }
+}

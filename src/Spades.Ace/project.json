@@ -22,7 +22,6 @@
         "watch":"Watchbird --dnx Spades.Ace"
 	},
 	 "frameworks": {
-        "dnx451": {
-        }
+        "dnx451": { }
     }
 }
