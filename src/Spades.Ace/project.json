@@ -12,7 +12,7 @@
     },
 	"dependencies": {
 		"Watchbird": "1.0.0-*",
-		"Microsoft.Dnx.Runtime.Abstractions": "1.0.0-*",
+		"Microsoft.Extensions.PlatformAbstractions": "1.0.0-*",
         "Microsoft.Framework.Configuration":"1.0.0-*",
 		"Microsoft.Framework.Configuration.Json": "1.0.0-*",
 		"Microsoft.Framework.Configuration.CommandLine": "1.0.0-*"

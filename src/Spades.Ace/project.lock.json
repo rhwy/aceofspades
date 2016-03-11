@@ -12,21 +12,6 @@
           "lib/FSWatcher.dll": {}
         }
       },
-      "Microsoft.Dnx.Runtime.Abstractions/1.0.0-rc1-15838": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "Microsoft.CSharp",
-          "mscorlib",
-          "System",
-          "System.Core"
-        ],
-        "compile": {
-          "lib/dnx451/Microsoft.Dnx.Runtime.Abstractions.dll": {}
-        },
-        "runtime": {
-          "lib/dnx451/Microsoft.Dnx.Runtime.Abstractions.dll": {}
-        }
-      },
       "Microsoft.Extensions.PlatformAbstractions/1.0.0-rc2-20019": {
         "type": "package",
         "compile": {
@@ -165,21 +150,6 @@
         },
         "runtime": {
           "lib/FSWatcher.dll": {}
-        }
-      },
-      "Microsoft.Dnx.Runtime.Abstractions/1.0.0-rc1-15838": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "Microsoft.CSharp",
-          "mscorlib",
-          "System",
-          "System.Core"
-        ],
-        "compile": {
-          "lib/dnx451/Microsoft.Dnx.Runtime.Abstractions.dll": {}
-        },
-        "runtime": {
-          "lib/dnx451/Microsoft.Dnx.Runtime.Abstractions.dll": {}
         }
       },
       "Microsoft.Extensions.PlatformAbstractions/1.0.0-rc2-20019": {
@@ -322,21 +292,6 @@
           "lib/FSWatcher.dll": {}
         }
       },
-      "Microsoft.Dnx.Runtime.Abstractions/1.0.0-rc1-15838": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "Microsoft.CSharp",
-          "mscorlib",
-          "System",
-          "System.Core"
-        ],
-        "compile": {
-          "lib/dnx451/Microsoft.Dnx.Runtime.Abstractions.dll": {}
-        },
-        "runtime": {
-          "lib/dnx451/Microsoft.Dnx.Runtime.Abstractions.dll": {}
-        }
-      },
       "Microsoft.Extensions.PlatformAbstractions/1.0.0-rc2-20019": {
         "type": "package",
         "compile": {
@@ -477,20 +432,6 @@
         "FSWatcher.0.1.0.nupkg.sha512",
         "FSWatcher.nuspec",
         "lib/FSWatcher.dll"
-      ]
-    },
-    "Microsoft.Dnx.Runtime.Abstractions/1.0.0-rc1-15838": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "ttAofn7DI73KBu50QqPbB3hN/E1bZO+NNNZnpHkEmLP2dh5Lqm2isho3vdrm25Bv2S7RETrIPXcERMOfGCcaow==",
-      "files": [
-        "lib/dnx451/Microsoft.Dnx.Runtime.Abstractions.dll",
-        "lib/dnx451/Microsoft.Dnx.Runtime.Abstractions.xml",
-        "lib/dnxcore50/Microsoft.Dnx.Runtime.Abstractions.dll",
-        "lib/dnxcore50/Microsoft.Dnx.Runtime.Abstractions.xml",
-        "Microsoft.Dnx.Runtime.Abstractions.1.0.0-rc1-15838.nupkg",
-        "Microsoft.Dnx.Runtime.Abstractions.1.0.0-rc1-15838.nupkg.sha512",
-        "Microsoft.Dnx.Runtime.Abstractions.nuspec"
       ]
     },
     "Microsoft.Extensions.PlatformAbstractions/1.0.0-rc2-20019": {
@@ -637,7 +578,8 @@
   "projectFileDependencyGroups": {
     "": [
       "Watchbird >= 1.0.0-*",
-      "Microsoft.Dnx.Runtime.Abstractions >= 1.0.0-*",
+      "Microsoft.Extensions.PlatformAbstractions >= 1.0.0-*",
+      "Microsoft.Extensions.PlatformAbstractions.Dnx >= 1.0.0-*",
       "Microsoft.Framework.Configuration >= 1.0.0-*",
       "Microsoft.Framework.Configuration.Json >= 1.0.0-*",
       "Microsoft.Framework.Configuration.CommandLine >= 1.0.0-*"

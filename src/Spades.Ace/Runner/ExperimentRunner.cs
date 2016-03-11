@@ -12,12 +12,21 @@ namespace AceOfSpades
 
     public class ExperimentGame
     {
+        IAppLogger logger;
+        ApplicationConfiguration configuration;
+        
+        public ExperimentGame(IAppLogger logger,ApplicationConfiguration configuration)
+        {
+            this.logger = logger;
+            this.configuration = configuration;
+        }
         public void RunExperiments()
         {
-            Assembly
-            .GetExecutingAssembly()
+            getAssembly()
             .GetMethodsWithAttribute<Experiment>()
-            .DoOnceIfAny(ClearAndWriteHeader)
+            .DoOnceIfAny(
+                action : StartupHeader,
+                elseAction : StartupHeaderAndMessageIfNoExperimentsFound)
             .DoForEach(method =>
             {
                 var experience = GetAttribute<Experiment>(method);
@@ -53,6 +62,10 @@ namespace AceOfSpades
             });
         }
         
+        private Assembly getAssembly ()
+        => Assembly.Load(configuration.WatchedExperiment);
+        
+            
         private void RunnableExperiment(MethodInfo method, Experiment experiment)
         {
             var values = GetAllAttributes<Values>(method);
@@ -81,15 +94,29 @@ namespace AceOfSpades
             WriteLine(new String('-', BufferWidth));
                 
         }
-        private void ClearAndWriteHeader(IEnumerable<MethodInfo> list)
+        private void MainHeader(IEnumerable<MethodInfo> list)
+        {
+            string message = $@"Running [{configuration.WatchedExperiment}]";
+            logger.Log(LogLevel.Warning, new String('-', BufferWidth-1));
+            logger.Log(LogLevel.Warning, message);
+            logger.Log(LogLevel.Warning, new String('-', BufferWidth-1));  
+        }
+        private void StartupHeader(IEnumerable<MethodInfo> list)
         {
             Clear();
             int total = list.Count();
             int playable = list.Count(m => GetAttribute<Experiment>(m).Play==Play.Now);
             string message = $@"Found {Blue} {total}{Reset} Experiments, {Blue} {playable}{Reset} running";
-            WriteLine(new String('-', BufferWidth-1));
-            WriteLine(message);
-            WriteLine(new String('-', BufferWidth-1));  
+            logger.Log(LogLevel.Info, new String('-', BufferWidth-1));
+            logger.Log(LogLevel.Info, message);
+            logger.Log(LogLevel.Info, new String('-', BufferWidth-1));  
+        }
+        private void StartupHeaderAndMessageIfNoExperimentsFound()
+        {
+            string message = "No experiments found!";
+            logger.Log(LogLevel.Info, new String('-', BufferWidth-1));
+            logger.Log(LogLevel.Info, message);
+            logger.Log(LogLevel.Info, new String('-', BufferWidth-1));  
         }
     }
 }

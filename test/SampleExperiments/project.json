@@ -1,6 +1,24 @@
 {
-  "dependencies": {
+  "version": "1.0.0-rc1-update",
+	"name":"spadesSample",
+    "description":"live executing your experiments",
+    "projectUrl":"https://github.com/rhwy/aceofspades",
+    "tags":["watch", "test", "experiments","continuous", "dnx", "mono"],
+	"authors": [
+		"rui carvalho"
+	],
+	"compilationOptions": {
+        "warningsAsErrors": true
+    },
+    "dependencies": {
     "watchbird": "1.0.0-rc1-3",
-    "
-  }
+    "Spades.Ace":{"type": "build"}
+    },
+	"commands": {
+		"run":"Spades.Ace default",
+        "watch":"Watchbird --dnx run"
+	},
+	 "frameworks": {
+        "dnx451": { }
+    }
 }

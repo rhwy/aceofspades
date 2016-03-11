@@ -4,7 +4,6 @@ namespace AceOfSpades
     using System.Collections.Generic;
     using System.Linq;
     using System.Reflection;
-    using static System.Console;
     public static class Utils
     {
         public static T GetAttribute<T>(MethodInfo method) where T : Attribute
@@ -28,22 +27,18 @@ namespace AceOfSpades
             }
         }  
         
-        public static IEnumerable<T> DoOnceIfAny<T>(this IEnumerable<T> me, Action<IEnumerable<T>> action)
+        public static IEnumerable<T> DoOnceIfAny<T>(
+            this IEnumerable<T> me, 
+            Action<IEnumerable<T>> action,
+            Action elseAction = null)
         {
             if(me.Any())
                 action(me);
+            else
+            {
+               elseAction?.Invoke();
+            }
             return me;
         } 
-    }
-    
-    public static class ColorConsoleHelper
-    {
-        public static void Red(string message)
-        {
-           var actual = ForegroundColor;
-           ForegroundColor = ConsoleColor.Red;
-           Write(message);
-           ForegroundColor = actual;
-        }
-    }		
+     }	
 }
